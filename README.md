@@ -1,5 +1,9 @@
 <h1>Summary of the files</h1>
 <strong> 1.Functionality</strong><br>
+The application will open the webcam and start detecting faces.
+Each detected face will be recognized, and if it matches a known customer, the name and confidence score will be displayed.
+After recognizing a face 5 times, the application will prompt the customer to make the "OK" sign.
+If the "OK" sign is detected with sufficient confidence, the customer's information will be added to the database.
 <br><br>
 
 <strong>2. Files</strong><br>
