@@ -1,6 +1,5 @@
-<h1>Summary and Assignment</h1>
-<strong>1. Purpose</strong><br>
-<i>In order to avoid hardcoding the names to be displayed when a certain face with a specific ID is recognized, we can dynamically fetch the customer names from the database based on the predicted ID. </i>
+<h1>Summary of the files</h1>
+<strong> 1.Functionality</strong><br>
 <br><br>
 
 <strong>2. Files</strong><br>
@@ -9,6 +8,8 @@
 03_rearrange_data.py<br>
 04_train_model.py<br>
 05_make_predictions.py<br>
+06_view_database.py<br>
+sign.py<br>
 
 <strong>3. Details</strong><br>
 
