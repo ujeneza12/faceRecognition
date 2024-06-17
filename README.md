@@ -1,6 +1,9 @@
-<h1>Summary and Assignment</h1>
-<strong>1. Purpose</strong><br>
-<i>In order to avoid hardcoding the names to be displayed when a certain face with a specific ID is recognized, we can dynamically fetch the customer names from the database based on the predicted ID. </i>
+<h1>Summary of the files</h1>
+<strong> 1.Functionality</strong><br>
+The application will open the webcam and start detecting faces.<br>
+Each detected face will be recognized, and if it matches a known customer, the name and confidence score will be displayed.<br>
+After recognizing a face 5 times, the application will prompt the customer to make the "OK" sign.<br>
+If the "OK" sign is detected with sufficient confidence, the customer's information will be added to the database.<br>
 <br><br>
 
 <strong>2. Files</strong><br>
@@ -9,6 +12,8 @@
 03_rearrange_data.py<br>
 04_train_model.py<br>
 05_make_predictions.py<br>
+06_view_database.py<br>
+sign.py<br>
 
 <strong>3. Details</strong><br>
 
@@ -37,20 +42,15 @@ This code utilizes a pre-trained LBPH (Local Binary Patterns Histograms) face re
 
 ++++++++++++++++
 
-<strong>4. Assignment (corrected)</strong><br><br>
-Instead of displaying the ID, fetch and display info (Full Name in this case) of the person whose face is recognized based on the predicted ID (UID) from the database.
+
+06_view_database.py
+
+this code connects to the database and then select the customer's information from the database and display information about the customer in a table
 
 ++++++++++++++++
 
-<strong>5. Querying SQLite DB</strong><br><br>
-Assuming SQLite3 is installed,
-start by typing the command 'sqlite3 customer_faces_data.db'.
-You'll then get a prompt
-sqlite>
+signs.py
 
-Go ahead and type commands like 
-pragma table_info (customers);
-select * from customers;
-...
+this code detects sign,If the "OK" sign is detected with sufficient confidence, the customer's information will be added to the database.
 
 
