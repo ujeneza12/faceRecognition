@@ -69,7 +69,7 @@ if len(faces) > 0:
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.putText(image, f"Generating image {image_count+1}", (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
-            if (time.time() - current_time) * 1000 >= interval and image_count < 10:
+            if (time.time() - current_time) * 1000 >= interval and image_count < 20:
                 image_name = f"data.{customer_uid}_{image_count+1}.jpg"
                 image_path = os.path.join('dataset', image_name)
                 
